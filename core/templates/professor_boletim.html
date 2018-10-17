@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href=":/static/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href=":/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href=":/static/css/base.css">
+    <style rel="stylesheet" type="text/css"></style>
+    <script type="text/javascript" src=":/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src=":/static/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="page-header fundo-claro">
+        <img src=":/static/img/logomarca-impacta.png" alt="logo" class="pull-left logo">
+        <div class="container">
+            <img src=":/static/img/logo-faculdade-branco.png" alt="Faculdade Impacta" class="center-block">
+        </div>
+    </div>
+</header>
+<div class="container">
+    <!--Menu-->
+    <div class="col-sm-2">
+        <h3 class="titulo-menu">
+            Menu
+            <div class="divider"></div>
+        </h3>
+        <div class="menu-vertical">
+            <div class="btn" >
+                Dropdown
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            </div>
+            <div class="menu-vertical-conteudo">
+                <ul class="" aria-labelledby="menuverticalDivider">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Action
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">                                
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Another action
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Something else here
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Separated link
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="menu-vertical">
+            <div class="btn" >
+                Dropdown
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            </div>
+            <div class="menu-vertical-conteudo">
+                <ul class="" aria-labelledby="menuverticalDivider">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Action
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">                                
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Another action
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Something else here
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Separated link
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="menu-vertical">
+            <div class="btn" >
+                Dropdown
+            </div>
+        </div>
+    </div></br></br>    
+    <!--Menu #################################################################### -->
+    <div class="col-sm-10">
+        <div class="container-fluid">
+            <div class="row">    
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Nome do curso - Turma
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#"> ADS - 1ºE </a></li>
+                        <li><a href="#"> SI - 3ºD</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </br></br>
+
+            <!--Tabela #################################################################### -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">ALuno</th>
+                        <th scope="col">Média</th>
+                        <th scope="col">Detalhes</th>
+                                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Eu</td>
+                        <td>10.00</td>
+                        <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">+</button></td>
+                        
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                        <td>Ele</td>
+                        <td>8.00</td>
+                        <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">+</button></td>
+                        
+                        </tr>
+                        <tr>
+                        <th scope="row">3</th>
+                        <td>Nós</td>
+                        <td>5.00</td>
+                        <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">+</button></td>
+                        
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Aluno: </h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Atividade</th>
+                                    <th scope="col">Descrição</th>
+                                    <th scope="col">Nota</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
