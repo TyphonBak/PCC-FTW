@@ -19,4 +19,6 @@ from core.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('alunoboletim/', alunoBoletim),
+    path('alunonotas/', alunoNotas),
 ]
