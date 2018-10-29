@@ -58,12 +58,12 @@ a:hover{
 }
 
 /*Extras*/
-.fundo-claro {
+header {
     background-color: rgb(168, 168, 168);
-    margin-bottom: 0;
-    margin-top: 0;
-    border-bottom: 0;
+    width: 100%;
+    padding: 10px 0;
 }
+
 .logo{
     width: 60px;
     margin-left: 10px;

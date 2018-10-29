@@ -3,7 +3,7 @@
 {% block conteudo %}
 
 <nav class ="categorias col-xs-4">
-    <ul>
+    <ul class="list-group">
         <li><a href="{% url 'painel_mensagem' perfil_logado %}">Painel</a></li>
         <li><a href="{% url 'mensagem_nova' perfil_logado %}">Enviar Mensagem</a></li>
         <li><a href="{% url 'mensagens_enviadas' perfil_logado %}">Enviadas</a></li>

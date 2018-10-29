@@ -2,16 +2,14 @@
 
 {% block conteudo %}
 <!--Painel de Mensagens-->
-    <div class = "container">
-        <nav class ="categorias">
-            <ul>
-                <li><a href = "{% url 'painel_mensagem' perfil_logado %}">Painel</a></li>
-                <li><a href = "{% url 'mensagem_nova' perfil_logado %}">Enviar Mensagem</a></li>
-                <li><a href = "{% url 'mensagens_enviadas' perfil_logado %}">Enviadas</a></li>
-                <li><a href = "{% url 'mensagens_recebidas' perfil_logado %}">Recebidas</a></li>
-                <li><a href = "{% url 'mensagens_rascunhos' perfil_logado %}">Rascunhos</a></li>
-            </ul>
-        </nav>
-    <div>
-        <h2>PAINEL DE MENSAGENS</h2>
+    <nav class ="categorias">
+        <ul>
+            <li><a href = "{% url 'painel_mensagem' perfil_logado %}">Painel</a></li>
+            <li><a href = "{% url 'mensagem_nova' perfil_logado %}">Enviar Mensagem</a></li>
+            <li><a href = "{% url 'mensagens_enviadas' perfil_logado %}">Enviadas</a></li>
+            <li><a href = "{% url 'mensagens_recebidas' perfil_logado %}">Recebidas</a></li>
+            <li><a href = "{% url 'mensagens_rascunhos' perfil_logado %}">Rascunhos</a></li>
+        </ul>
+    </nav>
+    <h2>PAINEL DE MENSAGENS</h2>
 {% endblock %}
