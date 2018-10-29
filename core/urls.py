@@ -17,4 +17,6 @@ urlpatterns = [
     path('matricular/', matricular, name='matricular'),
     path('boletim/', boletim_index, name='boletim_index'),
     path('boletim/semestre', boletim_detalhe, name='boletim_detalhe'),
+    path('disciplinas/', professor_disciplina, name='professor_disciplinas'),
+    path('professor/boletim/', professor_boletim, name='professor_boletim')
 ]

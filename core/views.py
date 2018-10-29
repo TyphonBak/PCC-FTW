@@ -1,7 +1,5 @@
 from django.shortcuts import render
 
-def professor_boletim(request):
-  return render(request, 'professor_boletim.html')
 
 # Create your views here.
 def login(request):
@@ -52,3 +50,8 @@ def boletim_index(request):
 def boletim_detalhe(request):
     return render(request, 'aluno_boletim_detalhe.html')
 
+def professor_boletim(request):
+  return render(request, 'professor_boletim.html')
+
+def professor_disciplina(request):
+    return render(request, 'professor_disciplina.html')
