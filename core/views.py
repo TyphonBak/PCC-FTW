@@ -43,3 +43,9 @@ def matricular(request):
 def disciplinas_matricula(request):
     return render(request, "disciplinas_matricula.html")
 
+def boletim_index(request):
+    return render(request, 'aluno_boletim.html')
+
+def boletim_detalhe(request):
+    return render(request, 'aluno_boletim_detalhe.html')
+
