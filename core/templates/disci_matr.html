@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/base.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-</head>
-<body>
-<header>
-    <div class="page-header fundo-claro">
-        <img src="img/logomarca-impacta.png" alt="logo" class="pull-left logo">
-        <div class="container">
-            <img src="img/logo-faculdade-branco.png" alt="Faculdade Impacta" class="center-block">
-        </div>
-    </div>
-</header>
+{%extends "base.html"%}
+{%block conteudo%}
 <div class="container">
     <!--Menu-->
     <div class="col-sm-2">
@@ -270,14 +251,7 @@
                             <button type="submit" class="btn btn-success"><a href = "matricular.html">Matricular-se</a></button>
                             </div>
                         </div>
-                        </div>
-                
-        </div>
-        
-    </div>
-    
-    
-
-<footer></footer>
-</body>
-</html>
+                        </div>  
+                    </div>
+            </div>
+    {%end block%}
