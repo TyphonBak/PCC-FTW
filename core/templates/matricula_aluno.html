@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<!--matriula-->
+    <div class = "container">
+        <div class="col-sm-10">
+            <ul class="nav nav-tabs nav-justified">
+                <li><a href = "{% url 'disciplinas_matricula' %}">Semestre 1º</a></li>
+            </ul>
+            <ul class="nav nav-tabs nav-justified">
+                <li><a href = "{% url 'disciplinas_matricula' %}">Semestre 2º</a></li>
+            </ul>
+            <ul class="nav nav-tabs nav-justified">
+                <li><a href = "{% url 'disciplinas_matricula' %}">Semestre 3º</a></li>
+            </ul>
+            <ul class="nav nav-tabs nav-justified">
+                <li><a href = "{% url 'disciplinas_matricula' %}">Semestre 4º</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

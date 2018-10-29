@@ -1,0 +1,33 @@
+.row{
+    position: relative;
+}
+
+.alinha-baixo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.espaco-distancia{
+    padding: 10px 15px 20px 15px;
+    margin-bottom: 20px;
+    background-color: slategray;
+}
+
+textarea {
+    margin-bottom: 10px;
+}
+
+#botao-form {
+    margin: 50px 0 20px;
+}
+
+.prof-turma {
+    position: relative;
+    right: 15px;
+    margin-top: 0;
+}
+
+.form-prof-post {
+    margin: 20px 50px;
+}

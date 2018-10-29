@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<nav class ="categorias col-xs-4">
+    <ul>
+        <li><a href="{% url 'painel_mensagem' perfil_logado %}">Painel</a></li>
+        <li><a href="{% url 'mensagem_nova' perfil_logado %}">Enviar Mensagem</a></li>
+        <li><a href="{% url 'mensagens_enviadas' perfil_logado %}">Enviadas</a></li>
+        <li><a href="{% url 'mensagens_recebidas' perfil_logado %}">Recebidas</a></li>
+        <li><a href="{% url 'mensagens_rascunhos' perfil_logado %}">Rascunhos</a></li>
+    </ul>
+</nav>
+<div class="col-xs-8">
+    <h2>Mensagens Enviadas</h2>
+    
+    <nav>
+        <ul>
+            <li><a href="{% url 'mensagem_detalhe' perfil_logado %}">Assunto #1</a></li>
+            <li><a href="{% url 'mensagem_detalhe' perfil_logado %}">Assunto #2</a></li>
+            <li><a href="{% url 'mensagem_detalhe' perfil_logado %}">Assunto #3</a></li>
+            <li><a href="{% url 'mensagem_detalhe' perfil_logado %}">Assunto #4</a></li>
+            <li><a href="{% url 'mensagem_detalhe' perfil_logado %}">Assunto #5</a></li>
+            <li><a href="{% url 'mensagem_detalhe' perfil_logado %}">Assunto #6</a></li>                
+        </ul>
+    </nav>
+</div>      
+{% endblock %}
