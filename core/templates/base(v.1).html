@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="page-header fundo-claro">
+        <img src="img/logomarca-impacta.png" alt="logo" class="pull-left logo">
+        <div class="container">
+            <img src="img/logo-faculdade-branco.png" alt="Faculdade Impacta" class="center-block">
+        </div>
+    </div>
+</header>
+<div class="container">
+    <!--Menu-->
+    <div class="col-sm-2">
+        <h3 class="titulo-menu">
+            Menu
+            <div class="divider"></div>
+        </h3>
+        <div class="menu-vertical">
+            <div class="btn" >
+                Dropdown
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            </div>
+            <div class="menu-vertical-conteudo">
+                <ul class="" aria-labelledby="menuverticalDivider">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Action
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">                                
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Another action
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Something else here
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Separated link
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="menu-vertical">
+            <div class="btn" >
+                Dropdown
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            </div>
+            <div class="menu-vertical-conteudo">
+                <ul class="" aria-labelledby="menuverticalDivider">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Action
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">                                
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Another action
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Something else here
+                        </a>
+                    </li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus"></span>
+                            Separated link
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="menu-vertical">
+            <div class="btn" >
+                Dropdown
+            </div>
+        </div>
+    </div>    
+    <div class="col-sm-10">
+    <!--Conteudo-->
+    <ul class="nav nav-tabs nav-justified">
+        <li><a href="{% url 'consulta_de_notas_frequencia' %}">Semestre 1º</a></li>
+    </ul>
+    <ul class="nav nav-tabs nav-justified">
+        <li><a href="{% url 'consulta_de_notas_frequencia' %}">Semestre 2º</a></li>
+    </ul>
+    <ul class="nav nav-tabs nav-justified">
+        <li><a href="{% url 'consulta_de_notas_frequencia' %}">Semestre 3º</a></li>
+    </ul>
+    <ul class="nav nav-tabs nav-justified">
+        <li><a href="{% url 'consulta_de_notas_frequencia' %}">Semestre 4º</a></li>
+    </ul>
+    
+    </div>
+</div>
+<footer></footer>
+</body>
+</html>

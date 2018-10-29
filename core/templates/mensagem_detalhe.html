@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<nav class ="categorias col-xs-4">
+    <ul>
+        <li><a href="{% url 'painel_aluno' %}">Painel</a></li>
+        <li><a href="{% url 'mensagem_nova' %}">Enviar Mensagem</a></li>
+        <li><a href="{% url 'mensagens_enviadas' %}">Enviadas</a></li>
+        <li><a href="{% url 'mensagens_recebidas' %}">Recebidas</a></li>
+        <li><a href="{% url 'mensagens_rascunhos' %}">Rascunhos</a></li>
+    </ul>
+</nav>
+<div class="col-xs-8">
+    <h2>Mensagens Gen</h2>
+
+    <h3>Assunto</h3>
+    
+    <p>essa foi a mensagem que eu enviei essa foi a mensagem que eu enviei
+            essa foi a mensagem que eu enviei essa foi a mensagem que eu enviei
+            essa foi a mensagem que eu enviei essa foi a mensagem que eu enviei
+            essa foi a mensagem que eu enviei essa foi a mensagem que eu enviei
+            essa foi a mensagem que eu enviei essa foi a mensagem que eu enviei
+            essa foi a mensagem que eu enviei essa foi a mensagem que eu enviei
+    </p>
+</div>
+{% endblock %}    
