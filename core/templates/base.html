@@ -26,7 +26,7 @@
         <!--Menu-->
         <div class="col-sm-2">
             <h3 class="titulo-menu">
-                Menu
+                Menu <small>{{ perfil_logado }}</small>
                 <div class="divider"></div>
             </h3>
             {% if perfil_logado == 'Coordenador' %}
@@ -64,8 +64,8 @@
             <div class="divider"></div>
             <div class="menu-vertical">
                 <div class="btn" >
-                    <a href="{% url 'painel_aluno' %}">
-                        Mensagens
+                    <a href="{% url 'painel_mensagem' perfil_logado %}">
+                        Mensagem
                     </a>                    
                 </div>
             </div>
@@ -73,36 +73,22 @@
             <!--Menu Professor-->
             <div class="menu-vertical">
                 <div class="btn" >
-                    Aluno
+                    Disciplinas
                     <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
                 </div>
                 <div class="menu-vertical-conteudo">
                     <ul class="" aria-labelledby="menuverticalDivider">
                         <li>
-                            <a href="/aluno_boletim/">
+                            <a href="{% url 'professor_boletim' %}">
                                 <span class="glyphicon glyphicon-minus"></span>
                                 Boletim
                             </a>
                         </li>
                         <li role="separator" class="divider"></li>
                         <li>
-                            <a href="/aluno_disciplina/">                                
+                            <a href="{% url 'professor_disciplina' %}">                                
                                 <span class="glyphicon glyphicon-minus"></span>
                                 Disciplina
-                            </a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                Something else here
-                            </a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                Separated link
                             </a>
                         </li>
                     </ul>
@@ -111,74 +97,30 @@
             <div class="divider"></div>
             <div class="menu-vertical">
                 <div class="btn" >
-                    Professor
-                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                </div>
-                <div class="menu-vertical-conteudo">
-                    <ul class="" aria-labelledby="menuverticalDivider">
-                        <li>
-                            <a href="/professor_boletim/">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                Boletim
-                            </a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li>
-                            <a href="/professor_disciplina/">                                
-                                <span class="glyphicon glyphicon-minus"></span>
-                                Disciplina
-                            </a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                Something else here
-                            </a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                Separated link
-                            </a>
-                        </li>
-                    </ul>
+                    <a href="{% url 'painel_mensagem' perfil_logado %}">
+                        Mensagem
+                    </a>
                 </div>
             </div>
             {% else %}                        
             <div class="menu-vertical">
                 <div class="btn" >
-                    Aluno
+                    Secretaria
                     <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
                 </div>
                 <div class="menu-vertical-conteudo">
                     <ul class="" aria-labelledby="menuverticalDivider">
                         <li>
-                            <a href="/aluno_boletim/">
+                            <a href="{% url 'boletim_index' %}">
                                 <span class="glyphicon glyphicon-minus"></span>
                                 Boletim
                             </a>
                         </li>
                         <li role="separator" class="divider"></li>
                         <li>
-                            <a href="/aluno_disciplina/">                                
+                            <a href="{% url 'disciplinas_matricula' %}">                                
                                 <span class="glyphicon glyphicon-minus"></span>
-                                Disciplina
-                            </a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                Something else here
-                            </a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                Separated link
+                                Matricula
                             </a>
                         </li>
                     </ul>
@@ -187,36 +129,15 @@
             <div class="divider"></div>
             <div class="menu-vertical">
                 <div class="btn" >
-                    Professor
+                    Disciplina
                     <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
                 </div>
                 <div class="menu-vertical-conteudo">
                     <ul class="" aria-labelledby="menuverticalDivider">
                         <li>
-                            <a href="/professor_boletim/">
+                            <a href="{% url 'aluno_disciplinas' %}">
                                 <span class="glyphicon glyphicon-minus"></span>
-                                Boletim
-                            </a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li>
-                            <a href="/professor_disciplina/">                                
-                                <span class="glyphicon glyphicon-minus"></span>
-                                Disciplina
-                            </a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                Something else here
-                            </a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-minus"></span>
-                                Separated link
+                                Material
                             </a>
                         </li>
                     </ul>
@@ -225,7 +146,9 @@
             <div class="divider"></div>
             <div class="menu-vertical">
                 <div class="btn" >
-                    Dropdown
+                    <a href="{% url 'painel_mensagem' perfil_logado %}">
+                        Mensagem
+                    </a>
                 </div>
             </div>
             {% endif %}

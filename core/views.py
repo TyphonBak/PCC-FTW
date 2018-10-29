@@ -1,57 +1,174 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
+
+def perfil_professor(request):
+    
+    context = {
+        'perfil_logado': 'Professor'
+    }
+
+    return render(request, 'index.html', context)
+
+def perfil_aluno(request):
+    
+    context = {
+        'perfil_logado': 'Aluno'
+    }
+
+    return render(request, 'index.html', context)
+
+def perfil_coordenador(request):
+    
+    context = {
+        'perfil_logado': 'Coordenador'
+    }
+
+    return render(request, 'index.html', context)
 
 # Create your views here.
 def login(request):
     return render(request, 'login.html')
 
-def index(request):
-    return render(request, 'index.html')
+def index(request, perfil_logado):
+
+    context = {
+        'perfil_logado': perfil_logado
+    }
+
+    return render(request, 'index.html', context)
 
 def cadastro_coordenador(request):
-    return render(request, 'cadastro_coordenador.html')
+
+    context = {
+        'perfil_logado': 'Coordenador'
+    }
+
+    return render(request, 'cadastro_coordenador.html', context)
 
 def cadastro_aluno(request):
-    return render(request, 'cadastro_aluno.html')
+
+    context = {
+        'perfil_logado': 'Coordenador'
+    }
+
+    return render(request, 'cadastro_aluno.html', context)
 
 def cadastro_professor(request):
-    return render(request, 'cadastro_professor.html')
 
-def mensagem_nova(request):
-    return render(request, 'mensagem_nova.html')
+    context = {
+        'perfil_logado': 'Coordenador'
+    }
 
-def mensagem_detalhe(request):
-    return render(request, 'mensagem_detalhe.html')
+    return render(request, 'cadastro_professor.html', context)
 
-def mensagens_enviadas(request):
-    return render(request, 'mensagens_enviadas.html')
+def mensagem_nova(request, perfil_logado):
 
-def mensagens_recebidas(request):
-    return render(request, 'mensagens_recebidas.html')
+    context = {
+        'perfil_logado': perfil_logado
+    }
 
-def mensagens_rascunhos(request):
-    return render(request, 'mensagens_rascunhos.html')
+    return render(request, 'mensagem_nova.html', context)
 
-def painel_aluno(request):
-    return render(request, 'painel_aluno.html')
+def mensagem_detalhe(request, perfil_logado):
+
+    context = {
+        'perfil_logado': perfil_logado
+    }
+
+    return render(request, 'mensagem_detalhe.html', context)
+
+def mensagens_enviadas(request, perfil_logado):
+
+    context = {
+        'perfil_logado': perfil_logado
+    }
+
+    return render(request, 'mensagens_enviadas.html', context)
+
+def mensagens_recebidas(request, perfil_logado):
+
+    context = {
+        'perfil_logado': perfil_logado
+    }
+
+    return render(request, 'mensagens_recebidas.html', context)
+
+def mensagens_rascunhos(request, perfil_logado):
+
+    context = {
+        'perfil_logado': perfil_logado
+    }
+
+    return render(request, 'mensagens_rascunhos.html', context)
+
+def painel_mensagem(request, perfil_logado):
+
+    context = {
+        'perfil_logado': perfil_logado
+    }
+
+    return render(request, 'painel_mensagem.html', context)
 
 def matricula_aluno(request):
-    return render(request, 'matricula_aluno.html')
+
+    context = {
+        'perfil_logado': 'Aluno'
+    }
+
+    return render(request, 'matricula_aluno.html', context)
 
 def matricular(request):
+
+    context = {
+        'perfil_logado': 'Aluno'
+    }
+
     return render(request, "matricular.html")
 
 def disciplinas_matricula(request):
+
+    context = {
+        'perfil_logado': 'Aluno'
+    }
+
     return render(request, "disciplinas_matricula.html")
 
 def boletim_index(request):
-    return render(request, 'aluno_boletim.html')
+
+    context = {
+        'perfil_logado': 'Aluno'
+    }
+
+    return render(request, 'aluno_boletim.html', context)
 
 def boletim_detalhe(request):
-    return render(request, 'aluno_boletim_detalhe.html')
+
+    context = {
+        'perfil_logado': 'Aluno'
+    }
+
+    return render(request, 'aluno_boletim_detalhe.html', context)
 
 def professor_boletim(request):
-  return render(request, 'professor_boletim.html')
+    
+    context = {
+        'perfil_logado': 'Professor'
+    }
+
+    return render(request, 'professor_boletim.html', context)
 
 def professor_disciplina(request):
-    return render(request, 'professor_disciplina.html')
+
+    context = {
+        'perfil_logado': 'Professor'
+    }
+
+    return render(request, 'disciplina_conteudo.html', context)
+
+def aluno_disciplina(request):
+
+    context = {
+        'perfil_logado': 'Aluno'
+    }
+
+    return render(request, 'disciplina_conteudo.html', context)

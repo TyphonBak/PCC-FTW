@@ -4,11 +4,11 @@
 
 <nav class ="categorias col-xs-4">
     <ul>
-        <li><a href="{% url 'painel_aluno' %}">Painel</a></li>
-        <li><a href="{% url 'mensagem_nova' %}">Enviar Mensagem</a></li>
-        <li><a href="{% url 'mensagens_enviadas' %}">Enviadas</a></li>
-        <li><a href="{% url 'mensagens_recebidas' %}">Recebidas</a></li>
-        <li><a href="{% url 'mensagens_rascunhos' %}">Rascunhos</a></li>
+        <li><a href="{% url 'painel_mensagem' perfil_logado %}">Painel</a></li>
+        <li><a href="{% url 'mensagem_nova' perfil_logado %}">Enviar Mensagem</a></li>
+        <li><a href="{% url 'mensagens_enviadas' perfil_logado %}">Enviadas</a></li>
+        <li><a href="{% url 'mensagens_recebidas' perfil_logado %}">Recebidas</a></li>
+        <li><a href="{% url 'mensagens_rascunhos' perfil_logado %}">Rascunhos</a></li>
     </ul>
 </nav>
 <div class="col-xs-8">

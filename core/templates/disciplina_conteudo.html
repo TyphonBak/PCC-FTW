@@ -9,9 +9,11 @@
 </div>
 <!--Area da Postagem / Envio-->
 <!-- Large modal -->
+{% if perfil_logado == 'Professor' %}
 <div class="container-fluid">
     <button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target=".bs-example-modal-lg" id="botao-form">Nova Entrada</button>
 </div>
+{% endif %}
 
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 <div class="modal-dialog modal-lg" role="document">
