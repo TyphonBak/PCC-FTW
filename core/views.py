@@ -123,7 +123,7 @@ def matricular(request):
         'perfil_logado': 'Aluno'
     }
 
-    return render(request, "matricular.html")
+    return render(request, "matricular.html", context)
 
 def disciplinas_matricula(request):
 
@@ -131,7 +131,7 @@ def disciplinas_matricula(request):
         'perfil_logado': 'Aluno'
     }
 
-    return render(request, "disciplinas_matricula.html")
+    return render(request, "disciplinas_matricula.html", context)
 
 def boletim_index(request):
 
