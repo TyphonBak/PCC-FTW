@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<div class="page-header">
+	<h1>Bem-vindo <small>{{ perfil_logado }}</small></h1>
+</div>
+<div class="row">
+	<div class="col-sm-5">
+		<h3>Notificações</h3>
+		<p>nova Ac postada</p>
+	</div>
+	<!--Mensagens Publicas-->
+	<div class="col-sm-offset-1 col-sm-5">
+	<!--Avisos Urgentes-->
+		{% if avisourgente %}
+		<div class="alert alert-{{ avisourgente.tipo }}" role="alert">{{ avisourgente.conteudo }}</div>
+		{% endif %}
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOne">
+					<h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Mensagem Publica #1
+						</a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+						Conteudo da primeira mensagem publica.
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTwo">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Mensagem Publica #2
+						</a>
+					</h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					<div class="panel-body">
+						Conteudo da segunda mensagem publica.
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						Mensagem publica #3
+					</a>
+				</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+						Conteudo da terceira mensagem publica.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
