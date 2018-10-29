@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<!--Painel de Mensagens-->
+    <div class = "container">
+        <nav class ="categorias">
+            <ul>
+                <li><a href = "{% url 'painel_aluno' %}">Painel</a></li>
+                <li><a href = "{% url 'mensagem_nova' %}">Enviar Mensagem</a></li>
+                <li><a href = "{% url 'mensagens_enviadas' %}">Enviadas</a></li>
+                <li><a href = "{% url 'mensagens_recebidas' %}">Recebidas</a></li>
+                <li><a href = "{% url 'mensagens_rascunhos' %}">Rascunhos</a></li>
+            </ul>
+        </nav>
+    <div>
+        <h2>PAINEL DE MENSAGENS</h2>
+{% endblock %}

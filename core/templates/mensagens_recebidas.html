@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<nav class ="categorias col-xs-4">
+    <ul>
+        <li><a href="{% url 'painel_aluno' %}">Painel</a></li>
+        <li><a href="{% url 'mensagem_nova' %}">Enviar Mensagem</a></li>
+        <li><a href="{% url 'mensagens_enviadas' %}">Enviadas</a></li>
+        <li><a href="{% url 'mensagens_recebidas' %}">Recebidas</a></li>
+        <li><a href="{% url 'mensagens_rascunhos' %}">Rascunhos</a></li>
+    </ul>
+</nav>
+<div class="col-xs-8">
+    <h2>Mensagens Recebidas</h2>
+    
+    <nav>
+        <ul>
+            <li><a href="{% url 'mensagem_detalhe' %}">Assunto #1</a></li>
+            <li><a href="{% url 'mensagem_detalhe' %}">Assunto #2</a></li>
+            <li><a href="{% url 'mensagem_detalhe' %}">Assunto #3</a></li>
+            <li><a href="{% url 'mensagem_detalhe' %}">Assunto #4</a></li>
+            <li><a href="{% url 'mensagem_detalhe' %}">Assunto #5</a></li>
+            <li><a href="{% url 'mensagem_detalhe' %}">Assunto #6</a></li>                
+        </ul>
+    </nav>
+</div>      
+{% endblock %}

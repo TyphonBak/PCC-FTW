@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<!--mandar mensagemm-->
+    <form>
+            <div class="col-sm-5">
+                <div class="form-group col-sm-10">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome">
+                </div>
+            
+                <div class="form-group col-sm-7">
+                <label for="registro">Registro:</label>
+                <input type="test" class="form-control" id="registro" placeholder="Registro">
+                <button type="submit" class="btn btn-success">Matricular-se</button>
+                </div>
+            </div>
+
+            <div class="form-group col-sm-4">
+                <label for="telefone1">*Telefone 1:</label>
+                <input type="text" class="form-control" id="telefone1" placeholder="DD+111111111">
+            </div>
+
+            <div class="form-group col-sm-5">
+                <label for="email">*E-mail:</label>
+                <input type="text" class="form-control" id="email" placeholder="nome@email.com.br">
+            </div>                       
+        </form>
+    </div>
+{% endblock %}
